@@ -13,7 +13,7 @@ jobs:
         with:
           username: ${{ secrets.DOKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login  -u ${{ secrets.DOKERHUB_USERNAME }} --password-stdin
+          # run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login  -u ${{ secrets.DOKERHUB_USERNAME }} --password-stdin
       - name: Checkout
         uses: actions/checkout@v2
       - name: Test
